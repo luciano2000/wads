@@ -49,6 +49,20 @@
     {
         layoutControls: {
             fillToContainer: true // Default true
+        },
+        vastOptions: {
+            adList: [
+                {
+                    roll: 'postRoll',
+                    vastTag: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/251829550/wads&description_url=https%3A%2F%2Fwads.netlify.com&tfcd=0&npa=0&sz=400x300%7C640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator='
+                }
+            ],
+            vastAdvanced: {
+                vastLoadedCallback:       (function() { console.log("VAST Carregado") }),
+                noVastVideoCallback:      (function() { console.log("Nenhum VAST carregado") }),
+                vastVideoSkippedCallback: (function() { console.log("Video Pulado") }),
+                vastVideoEndedCallback:   (function() { console.log("Fideo FInal") })
+            }
         }
     }
 ); </script>
