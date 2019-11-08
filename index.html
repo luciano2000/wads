@@ -31,10 +31,10 @@
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Wads</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">1b</a>
-      <a class="mdl-navigation__link" href="">2b</a>
-      <a class="mdl-navigation__link" href="">3b</a>
-      <a class="mdl-navigation__link" href="">4b</a>
+      <a class="mdl-navigation__link" href="">O que é wads</a>
+      <a class="mdl-navigation__link" href="">Quem somos</a>
+      <a class="mdl-navigation__link" href="">Indique e Ganhe</a>
+      <a class="mdl-navigation__link" href="">Minha Conta</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -45,7 +45,9 @@
     </div>
   </main>
 </div>
-<script> fluidPlayer("video-id",
+<script> 
+random = Date.now();
+fluidPlayer("video-id",
     {
         layoutControls: {
             fillToContainer: true // Default true
@@ -54,7 +56,7 @@
             adList: [
                 {
                     roll: 'postRoll',
-                    vastTag: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/251829550/wads&description_url=https%3A%2F%2Fwads.netlify.com&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator='
+                    vastTag: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/251829550/wads&description_url=https%3A%2F%2Fwads.netlify.com%2Findex.html&url=https%3A%2F%2Fwads.netlify.com%2Findex.html&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator='+random
                 }
             ],
             vastAdvanced: {
