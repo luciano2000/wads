@@ -39,7 +39,7 @@
   </div>
   <main class="mdl-layout__content">
     <div class="page-content" style="width: 100%; height: 100%;">
-        <video id="video-id" >
+        <video id="playerwads" >
             <source src="black.mp4" type="video/mp4"/>
         </video>
     </div>
@@ -47,7 +47,7 @@
 </div>
 <script> 
 random = Date.now();
-fluidPlayer("video-id",
+fluidPlayer("playerwads",
     {
         layoutControls: {
             fillToContainer: true // Default true
@@ -63,7 +63,9 @@ fluidPlayer("video-id",
                 vastLoadedCallback:       (function() { console.log("VAST Carregado") }),
                 noVastVideoCallback:      (function() { console.log("Nenhum VAST carregado") }),
                 vastVideoSkippedCallback: (function() { console.log("Video Pulado") }),
-                vastVideoEndedCallback:   (function() { console.log("Fideo FInal") })
+                vastVideoEndedCallback:   (function() { 
+                    console.log("Premio");
+                })
             }
         }
     }
