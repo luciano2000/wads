@@ -43,12 +43,14 @@
             <source src="black.mp4" type="video/mp4"/>
         </video>
           <div id="perguntas" style="display:none;width:90%; height:70%; margin:0 auto;background-color:#FFFFFF;color:#333333;position:absolute;z-index:100;top:15%;left:5%;">
-            <p>[%Pergunta%]</p>
-                <ul>
-                    <li>[%RespostaErrada1%]</li>
-                    <li>[%RespostaCorreta%]</li>
-                    <li>[%RespostaErrada2%]</li>
-                </ul>  
+              
+<h4>[%Pergunta%]</h4>
+
+<form>
+  <input type="radio" name="resposta" value="2"> [%RespostaErrada1%]<br>
+  <input type="radio" name="resposta" value="1"> [%RespostaCorreta%]<br>
+  <input type="radio" name="resposta" value="3"> [%RespostaErrada2%]  
+</form>               
   			</div>
     </div>
   </main>
