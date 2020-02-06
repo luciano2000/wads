@@ -16,6 +16,27 @@
             background-color: #080808;
         }
     </style>
+
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+     var gads = document.createElement('script');
+     gads.async = true; gads.type = 'text/javascript';
+     gads.src = 'http://www.googletagservices.com/tag/js/gpt.js';
+     var node = document.getElementsByTagName('script')[0];
+     node.parentNode.insertBefore(gads, node); })();
+   </script>
+   
+   <script type='text/javascript'>
+    googletag.cmd.push(function() {
+     googletag.defineSlot('/251829550/wads', [1, 1], 'perguntadiv').addService(googletag.companionAds()).addService(googletag.pubads());   
+     googletag.companionAds().setRefreshUnfilledSlots(true);
+     googletag.pubads().enableVideoAds();   
+     googletag.enableServices();
+    });
+   </script>
+    
 </head>
 <body>
     <!-- Always shows a header, even in smaller screens. -->
@@ -42,16 +63,14 @@
         <video id="playerwads" >
             <source src="black.mp4" type="video/mp4"/>
         </video>
-          <div id="perguntas" style="display:none;width:90%; height:70%; margin:0 auto;background-color:#FFFFFF;color:#333333;position:absolute;z-index:100;top:15%;left:5%;">
-              
-<h4>[%Pergunta%]</h4>
-
-<form>
-  <input type="radio" name="resposta" value="2"> [%RespostaErrada1%]<br>
-  <input type="radio" name="resposta" value="1"> [%RespostaCorreta%]<br>
-  <input type="radio" name="resposta" value="3"> [%RespostaErrada2%]  
-</form>               
-  			</div>
+        <div id="perguntas" style="display:none;width:90%; height:70%; margin:0 auto;background-color:#FFFFFF;color:#333333;position:absolute;z-index:100;top:15%;left:5%;">
+            <div id='perguntadiv'>
+                <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('perguntadiv'); });
+                console.log("Perguntas Carregadas?")
+                </script>
+            </div>
+        </div>
     </div>
   </main>
 </div>
@@ -70,7 +89,7 @@ fluidPlayer("playerwads",
             adList: [
                 {
                     roll: 'postRoll',
-                    vastTag: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/251829550/wads&description_url=https%3A%2F%2Fwads.netlify.com%2Findex.html&url=https%3A%2F%2Fwads.netlify.com%2Findex.html&tfcd=0&npa=0&sz=640x480&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator='+random
+                    vastTag: 'https://pubads.g.doubleclick.net/gampad/ads?iu=/251829550/wads&description_url=https%3A%2F%2Fwads.netlify.com%2Finde.html&tfcd=1&npa=0&sz=640x480&ciu_szs=1x1&min_ad_duration=15000&max_ad_duration=60000&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator='+random
                 }
             ],
             vastAdvanced: {
