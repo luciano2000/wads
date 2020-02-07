@@ -2,3 +2,18 @@
         background-color: #080808;
         }
  
+#perguntas {
+ -moz-border-radius:7px;
+-webkit-border-radius:7px;
+ border-radius:7px;
+ display:none;
+ width:90%; 
+ height:70%; 
+ margin:0 auto;
+ background-color:#FFFFFF;
+ color:#333333;
+ position:absolute;
+ z-index:100;
+ top:15%;
+ left:5%;
+}
