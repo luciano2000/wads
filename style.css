@@ -7,8 +7,8 @@
 -webkit-border-radius:7px;
  border-radius:7px;
  display:none;
- width:90%; 
- height:70%; 
+ width:80%; 
+ height:65%; 
  margin:0 auto;
  background-color:#FFFFFF;
  color:#333333;
@@ -16,7 +16,7 @@
  z-index:100;
  top:15%;
  left:5%;
- padding: 15px;
+ padding: 5%;
 }
 
 .page-content {
