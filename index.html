@@ -17,9 +17,9 @@
     <script>
     window.googletag = window.googletag || {cmd: []};
     googletag.cmd.push(function() {
+    googletag.pubads().enableVideoAds();
     googletag.defineSlot('/251829550/wads', [300, 250], 'perguntadiv').addService(googletag.companionAds()).addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
-    googletag.pubads().enableVideoAds();
     googletag.companionAds().setRefreshUnfilledSlots(true);
     googletag.enableServices();
     });
