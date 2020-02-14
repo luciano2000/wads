@@ -53,12 +53,7 @@
         <div id="perguntas">
             <span id="perguntadesc">Estamos quase lá.<br/>Responda corretamente a pergunta abaixo para ganhar seus pontos.</span>
             <hr/>
-                <!-- /251829550/wads -->
-                <div id='perguntadiv' style='width: 300px; height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('perguntadiv'); });
-                  </script>
-                </div>
+            <div id="questions"></div>
             <hr/>
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
                 Responder
@@ -73,6 +68,9 @@ var uri = window.location.href + "index.html";
 var res = encodeURI(uri);
      function carregadiv(){
        painelpergunta = document.getElementById("perguntas");
+         bannerpergunta = document.getElementById("questions");
+         bannerpergunta.firstChild("painelpergunta");
+         bannerpergunta.style.display = "block";
          painelpergunta.style.display = "block";
  }
 fluidPlayer("playerwads",
@@ -99,5 +97,11 @@ fluidPlayer("playerwads",
         }
     }
 ); </script>
+                <!-- /251829550/wads -->
+                <div id='perguntadiv' style='width: 300px; height: 250px;' style="display:none;">
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('perguntadiv'); });
+                  </script>
+                </div>    
 </body>
 </html>
